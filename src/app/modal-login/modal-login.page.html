@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <!-- Username input -->
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+         <ion-input placeholder="Username" type="text" [(ngModel)]="userName" name="userName"></ion-input>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+
+    <!-- password input -->
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-input placeholder="Password" type="text" [(ngModel)]="password" name="password"></ion-input>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+
+    <!-- Login button that will take you to front page -->
+    <ion-row class="ion-justify-content-center">
+      <ion-col>
+        <ion-button (click)="login()" color="success" size="medium" shape="round">
+          <ion-icon slot="end" name="log-in-outline"></ion-icon>
+          LOGIN
+        </ion-button>
+      </ion-col>
+      
+      <!-- back button to close modal and return to front page -->
+      <ion-col>
+        <ion-button expand="full" (click) ="closemodal()" color="danger" size="medium" shape="round">
+          <ion-icon slot="end" name="arrow-back-circle-outline"></ion-icon>
+          Back
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

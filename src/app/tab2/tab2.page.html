@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title >
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button routerLink="/friends" expand="full"><ion-icon slot="end" name="people-circle-outline"></ion-icon>Friend list</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button routerLink="/location" expand="full"> <ion-icon slot="end" name="earth-outline"></ion-icon>picture my location</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col>
+        <ion-button routerLink="/collection" expand="full"> <ion-icon slot="end" name="images-outline"></ion-icon>my collection</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

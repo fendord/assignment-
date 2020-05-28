@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-justify-content-center">
+      Friends List
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="secondary" (click)="addFriend()">
+        <ion-icon name="add-outline"></ion-icon>
+      </ion-button>
+      <ion-back-button
+          [text]="buttonText"
+          [icon]="buttonIcon">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+        {{contacts.firstName}}, {{contacts.lastName}}
+    </ion-item>
+  </ion-list>
+<ion-list>
+<ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item lines="none">
+          <ion-avatar slot="start">
+            <img src="../../assets/imgs/fend.jpg">
+          </ion-avatar>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label>
+            <h3>{{contacts.firstName}} {{contacts.lastName}}</h3>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+
+      <ion-col>
+        <ion-button routerLink="/collection">
+          <ion-icon name="images-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+</ion-list>
+</ion-content>
+
+<!-- look at week six tutorial -->

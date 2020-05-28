@@ -1,0 +1,14 @@
+ion-content {
+    --background: url("../../assets/imgs/login-modal-back.jpg")no-repeat fixed center/cover;
+  }
+
+ion-input {
+    --lines:"none";
+    --background: rgba(255, 255, 255, 0.6);
+    --border-radius: 3px;
+}
+
+// .ion-item {
+//     --background: rgba(255, 255, 255, 0.6);
+//     --border-radius: 3px;
+// }

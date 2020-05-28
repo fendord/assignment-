@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-justify-content-center">
+      My Location
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button
+          [text]="buttonText"
+          [icon]="buttonIcon">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <input #fileInput type="file" accept="image/*" (change)="imageSelected(fileInput.files)" multiple>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="two-image"*ngFor="let imgs of imageFiles">
+          <img src={{imageFile}} alt=""srcset="">
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

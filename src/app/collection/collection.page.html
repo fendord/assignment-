@@ -1,0 +1,145 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-justify-content-center">
+      Collection
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button
+          [text]="buttonText"
+          [icon]="buttonIcon">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-card>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../assets/imgs/fend.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h3>Brodie Hueppauff</h3>
+        <p>Feb 14 2020</p>
+      </ion-label>
+    </ion-item>
+  
+    <img src="../../assets/imgs/boabtree.jpg" alt="ion">
+    <ion-card-header>
+      <ion-card-title>Perth botanical gardens</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Gija Jumulu refers to the Gija people, the traditional owners of the land where the boab tree originated from in the East Kimberley. 'Jumulu' means boab tree.
+    </ion-card-content>
+  
+    <ion-footer>
+      <ion-row>
+        <ion-col center text-center>
+          <button>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>1.5k Likes</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <button>
+            <ion-icon name="text"></ion-icon>
+            <div>4 Comments</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <ion-button (click)="MapModal()">
+            <ion-icon name="map-outline"></ion-icon>
+            <div>show location</div>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-footer>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../assets/imgs/fend.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h3>Brodie Hueppauff</h3>
+        <p>Jan 18 2019</p>
+      </ion-label>
+    </ion-item>
+  
+    <img src="../../assets/imgs/church.jpg" alt="ion">
+    <ion-card-header>
+      <ion-card-title>Melbourne Church</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Melbourne church I found while walking around the university of Melbourne
+    </ion-card-content>
+  
+    <ion-footer>
+      <ion-row>
+        <ion-col center text-center>
+          <button>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>1 Like</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <button>
+            <ion-icon name="text"></ion-icon>
+            <div>1 Comment</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <ion-button (click)="MapModal()">
+            <ion-icon name="map-outline"></ion-icon>
+            <div>show location</div>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-footer>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../assets/imgs/fend.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h3>Brodie Hueppauff</h3>
+        <p>feb 18 2019</p>
+      </ion-label>
+    </ion-item>
+  
+    <img src="../../assets/imgs/mttamb.jpg" alt="ion">
+    <ion-card-header>
+      <ion-card-title>Mt tamborine lookout</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Tamborine trail walk found a lookout close to A waterfall
+    </ion-card-content>
+  
+    <ion-footer>
+      <ion-row>
+        <ion-col center text-center>
+          <button>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>1 Like</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <button>
+            <ion-icon name="text"></ion-icon>
+            <div> 50 Comments</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <ion-button (click)="MapModal()">
+            <ion-icon name="map-outline"></ion-icon>
+            <div>show location</div>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-footer>
+  </ion-card>
+
+</ion-content>
